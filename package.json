@@ -1,0 +1,43 @@
+{
+    "name": "gunzip",
+    "version": "0.0.0",
+    "description": "",
+    "author": {
+        "email": "tom@d.ventures",
+        "name": "Tom Kühl"
+    },
+    "keywords": [
+        "gunzip",
+        "promise-gunzip",
+        "gz",
+        "extract"
+    ],
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "precommit": "lint-staged"
+    },
+    "lint-staged": {
+        "*.{js,json,md}": [
+            "prettier --write",
+            "git add"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dventures/npm-gunzip.git"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/dventures/npm-gunzip/issues"
+    },
+    "homepage": "https://github.com/dventures/npm-gunzip#readme",
+    "devDependencies": {
+        "eslint": "^4.19.1",
+        "eslint-config-airbnb-base": "^12.1.0",
+        "eslint-config-prettier": "^2.9.0",
+        "husky": "^0.14.3",
+        "lint-staged": "^7.2.0",
+        "prettier": "^1.13.5"
+    }
+}
